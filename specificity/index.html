@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/specificity/css/style.css">
+    <title>Specifity</title>
+</head>
+<body>
+
+    <!-- begin of menu-->
+    <div class="header" #="absolute">
+      <nav role="navigation">
+         <ul>
+           <li><a href="/ininex/index.html">Ininex</a></li>  
+           <li><a href="/specificity/index.html">Specificity</a></li>
+           <li><a href="/boxmodel/index.html">Box Model</a></li>
+           <li><a href="/flexbox/index.html">Flex Box</a></li>
+           <li><a href="/animation/index.html">Animations</a></li>
+           <li><a href="/dribbble/index.html">Dribbble</a></li>
+        
+             <li><a href="/specificity/index.html">Mysite</a>
+               <ul>
+                 <li><a href="/mysite/images.html">Images</a></li>
+                 <li><a href="/mysite/links.html">Links</a></li>
+                 <li><a href="/mysite/list.html">List</a></li>
+                 <li><a href="/mysite/tables.html">Tables</a></li>
+                 <li><a href="/mysite/text.html">Text</a></li>
+               </ul>
+             </li> 
+            <ul>    
+       </nav>
+     </div>
+
+     <div class="wrap">
+       <div class="title">
+         <h1>!important</h1>
+         <p>The <b> !important </b> rules is used to override the previus style we
+           have applied to an element. <br> Is used to give more importance 
+           to a propriety, and the only way to override it is to add another !importatnt rules 
+          on the exthernal/internal or inline declaration </p>
+       </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="content">
+        <div class="column">
+          
+        </div>
+      </div>
+      <div class="content">
+        <div class="column"></div>
+      </div>
+      <div class="content">
+        <div class="column"></div>
+      </div>
+      <div class="content">
+        <div class="column"></div>
+      </div>
+    </div>
+    <br>
+   
+    <div id="first">This is a div and we have specificity 0.1.0.1</div>
+    <div id="second"> <p> This is a &lt;p&gt; inside a div. We have specificity 0.0.1.1</p></div>
+    <div id="third">
+      <div class="fourth"> <p> This is a &lt;p&gt; inside a two div. We have specificity 0.1.1.1 </p> </div>
+    </div>
+    
+</body>
+</html>

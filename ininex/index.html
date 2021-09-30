@@ -1,12 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/ininex/css/style.css" />
+    <title>ininex</title>
+    <style>
+      .internal {
+        text-align: center;
+        color: #333;
+      }
+
+      .example2 {
+        text-align: center;
+        color: red;
+      }
+
+      .example3 {
+        text-align: center;
+      }
+
+      .image {
+        width: 300px;
+        display: block;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+   
+  <!-- begin of menu-->
+  <div class="header" #="absolute">
+    <nav role="navigation">
+       <ul>
+         <li><a href="/ininex/index.html">Ininex</a></li>  
+         <li><a href="/specificity/index.html">Specificity</a></li>
+         <li><a href="/boxmodel/index.html">Box Model</a></li>
+         <li><a href="/flexbox/index.html">Flex Box</a></li>
+         <li><a href="/animation/index.html">Animations</a></li>
+         <li><a href="/dribbble/index.html">Dribbble</a></li>
+      
+           <li><a href="/ininex/index.html">Mysite</a>
+             <ul>
+               <li><a href="/mysite/images.html">Images</a></li>
+               <li><a href="/mysite/links.html">Links</a></li>
+               <li><a href="/mysite/list.html">List</a></li>
+               <li><a href="/mysite/tables.html">Tables</a></li>
+               <li><a href="/mysite/text.html">Text</a></li>
+             </ul>
+           </li> 
+           <ul>    
+     </nav>
+   </div>
+
+    <!--  Example inline css-->
+   <div class="content">
+    <div class="borders">
+      <h1 style="text-align: center; color: #333">Inline css</h1>
+      <p style="text-align: center; color: red">
+        Inline styles are defined within the "style" attribute inside element
+      </p>
+      <p class="example" style="text-align: center">
+        This example i made it by writing this <br />
+        &lt;h1 style="text-align: center; color: cornflowerblue"&gt; <br />
+        &lt;p style="text-align: center; color: red"&gt;
+      </p>
+    </div>
+
+    <!--Example Internal css-->
+
+    <div class="borders">
+      <h1 class="internal">Internal css</h1>
+      <p class="example2">
+        Internal styles are defined within the &lt;style&gt; <br />
+        element inside the &lt;head&gt; section of an HTML page
+      </p>
+      <p class="example3">
+        This example i have made it by giving a class to the &lt;h1&gt; and to
+        the &lt;p&gt; <br />
+        and stylizing from the &lt;head&gt; like this
+      </p>
+      <img class="image" src="/mysite/img/example.png" alt="" />
+    </div>
+
+    <!--  Example External css-->
+    <div class="borders">
+      <h1 class="externalH">External css</h1>
+      <p class="externalP">
+        External styles are defined within the &lt;link&gt; element, inside the
+        &lt;head&gt; section of an HTML page
+      </p>
+      <p class="externalPP">
+        This example is been stylized in a external css file <br />
+
+        I have give a class="externalH" name to the header <br />
+        and class="externalP" to this paragraph and I am controlling them <br />
+        from an external file by linking them from the &lt;<b>head</b>&gt;
+      </p>
+    </div>
+</div>
+
+<div class="paragraph">
+     <p>-The internal css option is convenient when we want to style a single element</p>
+     <p>-The drawbacks of an inline css occur when you want to change the style of many <br>
+       elements, so you should do it one by one</p>
+</div>
+  </body>
 </html>
